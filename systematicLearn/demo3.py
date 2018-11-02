@@ -8,7 +8,7 @@ def getHtmlText(url):
     try:
         r = requests.get(url, timeout=20)
         r.raise_for_status()
-        r.encodin = r.apparent_encoding
+        r.encoding = r.apparent_encoding
         return r.text
     except:
         return '异常'
